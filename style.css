@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    flex: 1;
+}
+
+.animal {
+    width: 40%;
+}
+
+.cat-card {
+    background-color: aquamarine;
+    float: left;
+}
+
+.dog-card {
+    background-color: coral;
+    float: right;
+}
+
+.cat-dog {
+    float: left;
+}
+
+p {
+    font-size: 2rem;
+}
+
+footer {
+    background-color: blueviolet;
+    clear: both;
+    text-align: center;
+}
+
+@media (max-width: 640px) {
+    .animal {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .cat-card {
+        margin-bottom: 10px;
+    }
+
+    p {
+        display: inline-block;
+    }
+    
+    .cat-dog {
+        width: 100%;
+    }
+
+    .cat-card img {
+        height: 250px;
+    }
+}
